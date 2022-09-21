@@ -1,0 +1,15 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+#Make sure that the libraries are updated in all three sections
+beam_bvm_interface = "0.1.0"
+beam_bvm_util = "0.1.0"
+common = { path = "../common" }
