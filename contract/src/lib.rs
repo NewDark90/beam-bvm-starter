@@ -1,4 +1,4 @@
-#![no_std]
+#![cfg_attr(not(feature = "std"), no_std)]
 #![no_main]
 
 /* 
@@ -16,6 +16,8 @@ Or you can tell the compiler not to mangle the name with these attributes
 #[allow(non_snake_case)]
 pub fn Method_0() { }
 */
+
+extern crate common;
 
 pub mod util;
 pub mod ctor;
