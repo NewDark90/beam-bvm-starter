@@ -11,5 +11,5 @@ crate-type = ["cdylib"] #must be cdylib
 [dependencies]
 #Make sure that the libraries are updated in all three sections
 beam_bvm_interface = "7.1.13106"
-beam_bvm_util = "7.1.1"
+beam_bvm_util = "7.1.2"
 common = { path = "../common" }
